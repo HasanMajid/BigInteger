@@ -226,7 +226,7 @@ BigInt BigInt::mult2(BigInt num) {
 			temp = (smallDec.at(i) * bigDec.at(j)) + carry;
 			carry = 0;
 			if (temp > 9){
-				carry = floor(temp / 10);
+				carry = (short)(temp / 10);
 				temp %= 10;
 			}
 			numb.dec.push_back(temp);
